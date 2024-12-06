@@ -17,10 +17,8 @@ direction = "up"
 # guard track:
 while True:
     current_position = mymap[row, col]
-    print(f"Checking position ({row}, {col}): {current_position}")
-
     if current_position == "#":
-        print(f"Encountered # at ({row}, {col}), changing direction.")
+        # changing direction
         if direction == "up":
             direction = "right"
             row += 1 # to stay below #
